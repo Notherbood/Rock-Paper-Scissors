@@ -49,13 +49,22 @@ function game(){
     console.log("Computer choose " + computerSelection)
 
 console.log(playRound(playerSelection, computerSelection));
+
 console.log("your score = " + userScore);
 console.log("Computer's score = " + computerScore);
     }
-    
+    if (userScore > computerScore){
+        console.log("You Win! You won " + userScore + " rounds and the computer " + computerScore + " rounds")
+    }
+    else if(userScore < computerScore){
+        console.log("You Lose! You lost " + userScore + " rounds and the computer " + computerScore + " rounds")
+    }
+    else if (userScore === computerScore){
+        console.log("Tie!")
+    }
 }
 
-let userScore = 0;
+let userScore = 1;
 let computerScore = 0;
 
 game()
