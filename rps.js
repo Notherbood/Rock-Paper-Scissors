@@ -39,17 +39,23 @@ function playRound(playerSelection, computerSelection) {
     
 }
 
-let userScore = 0;
-let computerScore = 0;
+
 
 function game(){
     for (let i = 0; i < 5; i++){
-const computerSelection = getComputerChoice();
-const playerSelection = getPlayerChoice();
+    const playerSelection = getPlayerChoice();
+    console.log("You choose " + playerSelection)       
+    const computerSelection = getComputerChoice();
+    console.log("Computer choose " + computerSelection)
+
 console.log(playRound(playerSelection, computerSelection));
 console.log("your score = " + userScore);
 console.log("Computer's score = " + computerScore);
     }
     
 }
+
+let userScore = 0;
+let computerScore = 0;
+
 game()
