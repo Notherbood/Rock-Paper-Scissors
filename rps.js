@@ -64,7 +64,7 @@ console.log("Computer's score = " + computerScore);
     }
 }
 
-let userScore = 1;
+let userScore = 0;
 let computerScore = 0;
 
 game()
